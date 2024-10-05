@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS untuk menyamakan ukuran gambar */
+      .product-img {
+        width: 100%; /* Lebar penuh sesuai dengan card */
+        height: 250px; /* Atur tinggi gambar agar seragam */
+        object-fit: cover; /* Memastikan gambar proporsional tanpa distorsi */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Coffee Dandys</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="container-fluid bg-dark text-white py-5 text-center">
+      <h1>Selamat Datang di Coffee Dandys</h1>
+      <p class="lead">Nikmati secangkir kopi terbaik dari kami setiap hari</p>
+      <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container py-5" id="menu">
+      <h2 class="text-center mb-4">Menu Terbaik Kami</h2>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="esspreso.jpg"
+              class="card-img-top product-img"
+              alt="Espresso"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Espresso</h5>
+              <p class="card-text">
+                seni dalam secangkir kecil, ekstraksi sempurna dari biji kopi
+                yang menghasilkan rasa kuat, kaya, dan berlapis crema.
+              </p>
+              <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="cappucino.jpg"
+              class="card-img-top product-img"
+              alt="Cappuccino"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Americano</h5>
+              <p class="card-text">
+                harmoni sederhana antara espresso dan air panas, menciptakan
+                kelezatan yang kuat namun lembut, seperti pagi yang tenang dalam
+                secangkir kopi.
+              </p>
+              <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="latte.jpg" class="card-img-top product-img" alt="Latte" />
+            <div class="card-body">
+              <h5 class="card-title">Latte</h5>
+              <p class="card-text">
+                perpaduan lembut antara espresso dan susu kukus, menciptakan
+                harmoni sempurna dalam setiap tegukan yang hangat dan
+                menenangkan.
+              </p>
+              <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Coffee Dandys</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
